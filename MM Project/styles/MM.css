@@ -1,0 +1,144 @@
+@font-face {
+  font-family: webfontregular;
+  src: url(fonts/klavika-bold-webfont.woff2) format("woff2");
+  src: url(fonts/klavika-bold-webfont.woff) format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: webfontregular;
+  src: url(fonts/klavika-light-webfont.woff2) format("woff2") url(fonts/klavika-light-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: black;
+  width: 100%;
+  color: white;
+  font-family: webfontregular, Klavika, sans-serif;
+  background-size: cover;
+}
+
+h1 {
+  font-family: webfontregular, Klavika, sans-serif;
+  font-size: 2pc;
+  text-decoration: underline;
+}
+
+h3 {
+  font-size: 1pc;
+  font-style: italic;
+}
+
+.leftp {
+  width: 200px;
+}
+
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #9e9b9b;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #69b0b9;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.logo {
+  height: 100px;
+  width: 100px;
+  filter: invert(1);
+}
+
+.alignMonkContainer {
+  height: auto;
+  width: auto;
+  position: relative;
+}
+
+.opening {
+  text-align: center;
+  margin-top: 30px;
+  background-color: black;
+  color: white;
+  height: auto;
+  width: auto;
+  position: relative;
+}
+
+.monkbutton {
+  animation: bounce 400ms;
+  animation-name: bounce;
+  animation-duration: 3s;
+  animation-delay: 2s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+    top: 100px;
+  }
+  50% {
+    transform: scale(1.5) translateY(5px);
+    top: -50px;
+  }
+  100% {
+    transform: scale(1.5) translateY(15px);
+    top: 0px;
+  }
+}
+
+.container {
+  width: 100%;
+  height: auto;
+}
+
+.child1 {
+  background-image: url("./images/1.jpg");
+  scroll-snap-align: start;
+}
+
+.child2 {
+  background-image: url("./images/2.jpg");
+  scroll-snap-align: start;
+}
+
+.pagelayout1 {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.pagelayout2 {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  margin-right: 50px;
+}
+
+.fab fa-facebook-f {
+  color: white;
+  width: 100px;
+  height: 100px;
+}
+
+.fab fa-twitter {
+  color: white;
+  width: 100px;
+  height: 100px;
+}
+/*# sourceMappingURL=mm.css.map */
