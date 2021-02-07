@@ -17,17 +17,21 @@ $tertiarycolor: rgb(105, 176, 185);
     font-weight: normal;
     font-style: normal; 
 }
+
 body {
+    background-size: cover; 
     background-color: black;
-    width: 100%;
+    // width: 100%;
+    // height: 100%;
+    margin: -2px;
     color: $primarycolor;
     font-family: webfontregular, Klavika, sans-serif;
-    background-size: cover; 
 }
 
 h1 {
-    font-family: webfontregular, Klavika, sans-serif;
-    font-size: 2pc;
+    font-family: Klavika, sans-serif;
+    font-weight: bold;
+    font-size: 50px;
     text-decoration: underline;
 }
 
@@ -54,18 +58,26 @@ a:link {
     background-color: transparent;
     text-decoration: underline;
   }
-  .logo {
-      height: 100px;
-      width: 100px;
-      filter: invert(1);
+
+  .logocontainer {
+      height: 200px;
+      width: 200px;
+     position: relative;
   }
+  .logo {
+    height: 100px;
+    width: 100px;
+    filter: invert(1);
+}
 
 .alignMonkContainer {
     // display: flex;
     // justify-content: center;
-    height: auto;
-    width: auto;
-    position: relative; 
+    // height: auto;
+    // width: auto;
+    position: fixed; 
+    bottom: 0;
+    right: 0;
 }
 
 
@@ -115,6 +127,7 @@ a:link {
     align-items: left;
 }
 .pagelayout2 {
+
     width: auto;
     height: auto;
     display: flex;
@@ -133,6 +146,49 @@ a:link {
     width: 100px;
     height: 100px;
 }
+
+
+.text-block-left {
+    width: 35vw;
+    position: absolute;
+    top: 3vw;
+    left: 3vw;
+    color: white;
+    text-decoration-line: solid;
+    display: flex;
+    justify-content: left;
+    background-color: rgba(0, 0, 0, 0)
+}
+.text-block2 {
+    width: 35vw;
+    position: absolute;
+    bottom: 1vw;
+    left: 3vw;
+    color: white;
+    display: flex;
+    align-items: flex-start;
+    background-color: rgba(0, 0, 0, 0)
+}
+.logocontainer {
+    width: 35vw;
+    position: absolute;
+    bottom: 1vw;
+    right: 3vw;
+    /* color: white; */
+    display: flex;
+    align-items: flex-end;
+    background-color: rgba(0, 0, 0, 0)
+}
+
+.imgcarousel {
+    width: 100%;
+    height: 100%;
+}
+// .imgbackground {
+//     max-width: 100%;
+//     height: auto;
+//     max-height: 100%;
+// }
 // @keyframes shake {
 //     0% { transform: translate(1px, 1px) rotate(0deg); }
 //     10% { transform: translate(-1px, -2px) rotate(-1deg); }
@@ -171,9 +227,3 @@ a:link {
 // //     background-color: bisque;
 // // }
 
-
-// .monkspage{
-//     width: auto;
-//     height: auto;
-
-// } 
