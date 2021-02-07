@@ -249,4 +249,21 @@ a:hover {
   justify-content: left;
   background-color: transparent;
 }
+
+.bounce {
+  animation-name: bounce;
+  animation-duration: 2s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 /*# sourceMappingURL=MM.css.map */
