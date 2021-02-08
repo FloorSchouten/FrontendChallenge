@@ -2,6 +2,7 @@ $primarycolor: white;
 $secondarycolor: rgb(158, 155, 155);
 $tertiarycolor: rgb(105, 176, 185);
 
+
 @font-face {
     font-family: Klavika;
     src: url(/fonts/klavika-bold-webfont.woff) format('woff');
@@ -12,18 +13,10 @@ $tertiarycolor: rgb(105, 176, 185);
     src: url(/fonts/klavika-light-webfont.woff) format('woff')
 
 }
-// html { 
-//     background: url(images/bg.jpg) no-repeat center center fixed; 
-//     -webkit-background-size: cover;
-//     -moz-background-size: cover;
-//     -o-background-size: cover;
-//     background-size: cover;
-//   }
+
 body {
-    background-size: cover; 
+    background-size: cover;
     background-color: black;
-    // width: 100%;
-    // height: 100%;
     margin: -2px;
     color: $primarycolor;
     font-family: Klavika;
@@ -32,16 +25,29 @@ body {
 }
 
 h1 {
-    font-family: Klavika;
     font-weight: normal;
-    font-size: 4vw;
+    font-size: 150px;
     text-decoration: underline;
 }
 
-h3 {
-    font-size: 1pc;
-    font-style: italic;
+h2 {
+    font-size: 2pc;  
 }
+
+h6 {
+  font-size: 1pc;
+  font-style: italic;
+}
+
+// .text-block-left:after {
+//     content: ""; /* This is necessary for the pseudo element to work. */ 
+//     display: block; /* This will put the pseudo element on its own line. */
+//     margin: 0 auto; /* This will center the border. */
+//     width: 100%; /* Change this to whatever width you want. */
+//     padding-top: 20px; /* This creates some space between the element and the border. */
+//     border-bottom: 1px solid $primarycolor; /* This creates the border. Replace black with whatever color you want. */
+// }
+
 
 .leftp {
     width: 200px;
@@ -68,6 +74,7 @@ a:link {
     filter: invert(1);
     padding-left: 10vw;
 }
+
 .logocontainer {
     width: 35vw;
     position: absolute;
@@ -78,46 +85,69 @@ a:link {
     align-items: flex-end;
     background-color: rgba(0, 0, 0, 0)
 }
-.alignMonkContainer {
-    // display: flex;
-    // justify-content: center;
-    // height: auto;
-    // width: auto;
-    position: fixed; 
-    bottom: 0;
-    right: 0;
+.arrow {
+  border: solid $primarycolor;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 10px;
+  margin-left: 20px;
 }
 
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
 
-.opening {
-    text-align: center;
+.intro {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     margin-top: 30px;
     background-color: black;
     color: $primarycolor;
-    height: auto;
-    width: auto;
+    // height: auto;
+    // width: auto;
     position: relative;
 }
+.enter {
+  animation-iteration-count: 2;
+  height: 100px;
+  width: 100px;
+  animation-name: bounce;
+  animation-duration: 2s;
+  animation-delay: 1s;
+}
 
-.monkbutton {
-    animation: bounce 400ms;
-    animation-name: bounce;
-    animation-duration: 3s;
-    animation-delay: 2s;
+.bounce1 {
+  animation-name: bounce;
+  animation-timing-function: ease;
 }
 @keyframes bounce {
-    0% {transform: scale(1);top: 100px;}
-    50% {transform: scale(1.5) translateY(5px);
-        top: -50px;}
-    100% {transform: scale(1.5) translateY(15px); top: 0px;}
-   }
-   .container {
-       width: 100%;
-       height: auto;
-    // scroll-snap-type: mandatory;
-    // scroll-snap-points-y: repeat(300px);
-    // scroll-snap-type: y mandatory;
-  }
+  0% { transform: translateY(0);}
+  50% { transform: translateY(-100px);}
+  100% { transform: translateY(0);}
+}
+
+.columnpage {
+  color: $primarycolor
+}
+  
+// @keyframes bounce-m {
+//     0% {transform: scale(1); translateY(0);}
+//     50% {transform: scale(1.5) translateY(-200px);}
+//     100% {transform: scale(1.5) translateY(15px);}
+//    }
+//    .container {
+//        width: 100%;
+//        height: auto;
+//     // scroll-snap-type: mandatory;
+//     // scroll-snap-points-y: repeat(300px);
+//     // scroll-snap-type: y mandatory;
+//   }
   
   .child1 {
     background-image: url('./images/1.jpg');
@@ -157,12 +187,12 @@ a:link {
 
 
 .text-block-left {
-    width: 35vw;
+    width: 25vw;
     position: absolute;
     top: 3vw;
     left: 3vw;
-    color: white;
-    text-decoration-line: solid;
+    color: $primarycolor;
+    text-decoration-line: underline;
     display: flex;
     justify-content: left;
     background-color: rgba(0, 0, 0, 0)
@@ -172,7 +202,7 @@ a:link {
     position: absolute;
     top: 3vw;
     right: 3vw;
-    color: white;
+    color: $primarycolor;
     text-decoration-line: solid;
     display: flex;
     justify-content: left;
@@ -181,31 +211,15 @@ a:link {
 .text-block2 {
     width: 35vw;
     position: absolute;
-    bottom: 3vw;
+    bottom: 4vw;
     left: 3vw;
-    color: white;
+    color: $primarycolor;
     display: flex;
     align-items: flex-start;
     background-color: rgba(0, 0, 0, 0)
 }
-.imgbackground {
-    min-height: 100%;
-    min-width: 1024px;
-    // scroll-snap-align: center;
-    /* Set up proportionate scaling */
-    width: 100%;
-    height: auto;
-      
-    /* Set up positioning */
-    position: fixed;
-    top: 0;
-    left: 0;
-}
 
-.imgcarousel {
-    width: 100%;
-    height: 100%;
-}
+
 .pagination {
     width: 5vw;
     position: absolute;
@@ -216,7 +230,7 @@ a:link {
     display: flex;
     justify-content: left;
     background-color: rgba(0, 0, 0, 0);
-    // scroll-snap-align: center;
+    
 //     scroll-snap-type: x mandatory;
 //   overflow-x: scroll;
 }
@@ -248,20 +262,15 @@ a:link {
     justify-content: left;
     background-color: rgba(0, 0, 0, 0)
   }
-// .imgbackground {
-//     max-width: 100%;
-//     height: auto;
-//     max-height: 100%;
-// }
-.bounce {
-    animation-name: bounce;
-    animation-duration: 2s;
-  }
-@keyframes bounce {
-    0% { transform: translateY(0);}
-    50% { transform: translateY(-100px); }
-    100% { transform: translateY(0);}
-  }
+.imgbackground {
+  // height: 1027px;
+  background-size: cover;
+  background-position: center;
+    // max-width: 100%;
+    // height: auto;
+    // max-height: 100%;
+}
+
 
 // .monkContainer {
 //     width: 50px;
@@ -276,16 +285,8 @@ a:link {
 //     /* display: block;
 //     margin-left: auto;
 //     margin-right: auto;
-//     margin-top: auto; */ 
+//     margin-top: auto; */   
+//      
+// 
 
-    
-//       
-
-
-// }
-// // .monkButton {
-// //     border: solid 5px brown;
-// //     border-radius: 10%;
-// //     background-color: bisque;
-// // }
 

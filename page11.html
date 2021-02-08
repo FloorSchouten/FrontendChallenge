@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MediaMonks</title>
+</head>
+<style>
+       monk {
+           height: 100px;
+           width: 100px;
+           animation-name: bounce;
+           animation-duration: 2s;
+           animation-delay: 1s;
+           animation-iteration-count: 2;
+       }
+            bounce {
+              animation-name: bounce;
+              animation-timing-function: ease;
+           }
+    @keyframes bounce {
+            0% { transform: translateY(0);scale: (1);}
+            50% { transform: translateY(-100px);scale: (1.5);}
+            100% { transform: translateY(50px); scale: (1.5);}
+    }
+</style>
+<body>
+    <div >
+        <h1>DISCOVER YOUR CALLING</h1>
+        <h3>Find your inner Monk</h3>
+        <br>
+        <br>
+        <br>
+        <div class="monk">
+            
+                <img src="./images/monk.png" alt="sitting monk" class="bounce"/>
+            
+        </div>
+        <h6><a href="page1.html">Click to start your journey</a></h6>
+    </div>
+</body>
+<script src="MM.js"></script>
+</html>

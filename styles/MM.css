@@ -19,13 +19,16 @@ body {
 }
 
 h1 {
-  font-family: Klavika;
   font-weight: normal;
-  font-size: 4vw;
+  font-size: 3vw;
   text-decoration: underline;
 }
 
-h3 {
+h2 {
+  font-size: 2pc;
+}
+
+h6 {
   font-size: 1pc;
   font-style: italic;
 }
@@ -70,47 +73,54 @@ a:hover {
   background-color: transparent;
 }
 
-.alignMonkContainer {
-  position: fixed;
-  bottom: 0;
-  right: 0;
+.arrow {
+  border: solid white;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 10px;
+  margin-left: 20px;
 }
 
-.opening {
-  text-align: center;
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   margin-top: 30px;
-  background-color: black;
-  color: white;
-  height: auto;
-  width: auto;
-  position: relative;
 }
 
-.monkbutton {
-  animation: bounce 400ms;
+.intro monk {
+  animation-iteration-count: infinite;
+  height: 100px;
+  width: 100px;
   animation-name: bounce;
-  animation-duration: 3s;
-  animation-delay: 2s;
+  animation-duration: 2s;
+}
+
+.intro monk bounce {
+  animation-name: bounce;
+  animation-timing-function: ease;
 }
 
 @keyframes bounce {
   0% {
-    transform: scale(1);
-    top: 100px;
+    transform: translateY(0);
   }
   50% {
-    transform: scale(1.5) translateY(5px);
-    top: -50px;
+    transform: translateY(-100px);
   }
   100% {
-    transform: scale(1.5) translateY(15px);
-    top: 0px;
+    transform: translateY(0);
   }
-}
-
-.container {
-  width: 100%;
-  height: auto;
 }
 
 .child1 {
@@ -153,12 +163,12 @@ a:hover {
 }
 
 .text-block-left {
-  width: 35vw;
+  width: 25vw;
   position: absolute;
   top: 3vw;
   left: 3vw;
   color: white;
-  text-decoration-line: solid;
+  text-decoration-line: underline;
   display: flex;
   justify-content: left;
   background-color: transparent;
@@ -179,24 +189,12 @@ a:hover {
 .text-block2 {
   width: 35vw;
   position: absolute;
-  bottom: 3vw;
+  bottom: 4vw;
   left: 3vw;
   color: white;
   display: flex;
   align-items: flex-start;
   background-color: transparent;
-}
-
-.imgbackground {
-  min-height: 100%;
-  min-width: 1024px;
-  /* Set up proportionate scaling */
-  width: 100%;
-  height: auto;
-  /* Set up positioning */
-  position: fixed;
-  top: 0;
-  left: 0;
 }
 
 .imgcarousel {
@@ -245,22 +243,5 @@ a:hover {
   display: flex;
   justify-content: left;
   background-color: transparent;
-}
-
-.bounce {
-  animation-name: bounce;
-  animation-duration: 2s;
-}
-
-@keyframes bounce {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-100px);
-  }
-  100% {
-    transform: translateY(0);
-  }
 }
 /*# sourceMappingURL=MM.css.map */
