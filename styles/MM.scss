@@ -3,19 +3,14 @@ $secondarycolor: rgb(158, 155, 155);
 $tertiarycolor: rgb(105, 176, 185);
 
 @font-face {
-    font-family: webfontregular;
-    src: url(fonts/klavika-bold-webfont.woff2) format('woff2');
-    src: url(fonts/klavika-bold-webfont.woff) format('woff');
-    font-weight: bold;
-    font-style: normal;
+    font-family: Klavika;
+    src: url(/fonts/klavika-bold-webfont.woff) format('woff');
 }
 
 @font-face {
-    font-family: webfontregular;
-    src: url(fonts/klavika-light-webfont.woff2) format('woff2')
-         url(fonts/klavika-light-webfont.woff) format('woff');
-    font-weight: normal;
-    font-style: normal; 
+    font-family: Klavika;
+    src: url(/fonts/klavika-light-webfont.woff) format('woff')
+
 }
 // html { 
 //     background: url(images/bg.jpg) no-repeat center center fixed; 
@@ -31,13 +26,15 @@ body {
     // height: 100%;
     margin: -2px;
     color: $primarycolor;
-    font-family: webfontregular, Klavika, sans-serif;
+    font-family: Klavika;
+    font-weight: normal;
+    font-style: normal;
 }
 
 h1 {
-    font-family: Klavika, sans-serif;
-    font-weight: bold;
-    font-size: 50px;
+    font-family: Klavika;
+    font-weight: normal;
+    font-size: 4vw;
     text-decoration: underline;
 }
 
