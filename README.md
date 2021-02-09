@@ -3,7 +3,7 @@ This project was thoroughly enjoyable and challenging. At first daunting, then a
 
 Please start the project by opening the 'enter' file. 
 
-This page has the sitting monk on it (I had him wiggling on hover first, then properly jumping but when trying to scale him to 1.5, I broke my code). I made a clickable quote to start the website. 
+This page has the sitting monk on it. I made a clickable quote to instruct the user to start the website. 
 
 The first page (named it intro) gives access to the rest of the pages. These pages have background images and must be scrollable. I decided to cut up the background image in 16:9 scale images and use these for the backgrounds. For the last page, I contemplated having the image push against the black background but I couldn't reproduce what I managed earlier.
 

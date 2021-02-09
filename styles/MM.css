@@ -20,7 +20,7 @@ body {
 
 h1 {
   font-weight: normal;
-  font-size: 3vw;
+  font-size: 50px;
   text-decoration: underline;
 }
 
@@ -96,31 +96,55 @@ a:hover {
   align-items: center;
   flex-direction: column;
   margin-top: 30px;
+  background-color: black;
+  color: white;
+  position: relative;
 }
 
-.intro monk {
-  animation-iteration-count: infinite;
+.enter {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+  background-color: black;
+  color: white;
+  position: relative;
+}
+
+.monk {
   height: 100px;
   width: 100px;
-  animation-name: bounce;
-  animation-duration: 2s;
 }
 
-.intro monk bounce {
-  animation-name: bounce;
+.stuiter {
+  animation-name: bounce1;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  height: 70px;
+  width: 55px;
+}
+
+.bounce1 {
+  animation-name: bounce1;
   animation-timing-function: ease;
 }
 
-@keyframes bounce {
+@keyframes bounce1 {
   0% {
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
   }
   50% {
-    transform: translateY(-100px);
+    transform: translateY(-20px) scale(1.5);
   }
   100% {
-    transform: translateY(0);
+    transform: translateY(0px) scale(1.5);
   }
+}
+
+.columnpage {
+  color: white;
 }
 
 .child1 {
@@ -197,11 +221,6 @@ a:hover {
   background-color: transparent;
 }
 
-.imgcarousel {
-  width: 100%;
-  height: 100%;
-}
-
 .pagination {
   width: 5vw;
   position: absolute;
@@ -243,5 +262,10 @@ a:hover {
   display: flex;
   justify-content: left;
   background-color: transparent;
+}
+
+.imgbackground {
+  background-size: cover;
+  background-position: center;
 }
 /*# sourceMappingURL=MM.css.map */
