@@ -40,16 +40,13 @@ h6 {
 }
 
 .imgbackground {
-  // height: 1027px;
   background-size: cover;
   background-position: center;
   height: 100%;
   width: 100%;
   background-position: center;
-    // max-width: 100%;
-    // height: auto;
-    // max-height: 100%;
 }
+
 .leftp {
     width: 200px;
 }
@@ -113,8 +110,6 @@ a:link {
   margin-top: 30px;
   background-color: black;
   color: $primarycolor;
-  // height: auto;
-  // width: auto;
   position: relative;
 }
 .enter {
@@ -124,8 +119,6 @@ a:link {
     margin-top: 30px;
     background-color: black;
     color: $primarycolor;
-    // height: auto;
-    // width: auto;
     position: relative;
 }
 .monk { 
@@ -181,12 +174,10 @@ a:link {
     margin-right: 50px;
 }
 
-
-
 .text-block-left {
     width: 25vw;
     position: absolute;
-    top: 3vw;
+    top: 13vw;
     left: 3vw;
     color: $primarycolor;
     text-decoration-line: underline;
@@ -196,8 +187,9 @@ a:link {
 }
 .text-block-right {
     width: 35vw;
+    text-align: right;
     position: absolute;
-    top: 3vw;
+    top: 13vw;
     right: 3vw;
     color: $primarycolor;
     text-decoration-line: solid;
