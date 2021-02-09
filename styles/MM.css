@@ -9,7 +9,7 @@
 }
 
 body {
-  background-size: cover;
+  height: 100%;
   background-color: black;
   margin: -2px;
   color: white;
@@ -35,6 +35,8 @@ h6 {
 
 .imgbackground {
   background-size: cover;
+  background-position: center;
+  height: 100%;
   background-position: center;
 }
 
@@ -129,14 +131,18 @@ a:hover {
   }
 }
 
-.child1 {
-  background-image: url("./images/1.jpg");
-  scroll-snap-align: start;
-}
-
-.child2 {
-  background-image: url("./images/2.jpg");
-  scroll-snap-align: start;
+#entering {
+  background-color: brown;
+  border: none;
+  color: white;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50%;
 }
 
 .pagelayout1 {
@@ -154,18 +160,6 @@ a:hover {
   flex-direction: column;
   text-align: right;
   margin-right: 50px;
-}
-
-.fab fa-facebook-f {
-  color: white;
-  width: 100px;
-  height: 100px;
-}
-
-.fab fa-twitter {
-  color: white;
-  width: 100px;
-  height: 100px;
 }
 
 .text-block-left {
@@ -274,5 +268,17 @@ a:hover {
   margin-right: -20%;
   padding: 50px 20px 0px;
   text-align: right;
+}
+
+.fab fa-facebook-f {
+  color: white;
+  width: 100px;
+  height: 100px;
+}
+
+.fab fa-twitter {
+  color: white;
+  width: 100px;
+  height: 100px;
 }
 /*# sourceMappingURL=MM.css.map */

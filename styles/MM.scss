@@ -14,7 +14,8 @@ $tertiarycolor: rgb(105, 176, 185);
 }
 
 body {
-    background-size: cover;
+    // background-size: cover;
+    height: 100%;
     background-color: black;
     margin: -2px;
     color: $primarycolor;
@@ -41,6 +42,8 @@ h6 {
 .imgbackground {
   // height: 1027px;
   background-size: cover;
+  background-position: center;
+  height: 100%;
   background-position: center;
     // max-width: 100%;
     // height: auto;
@@ -147,17 +150,20 @@ a:link {
   100% { transform: translateY(0px) scale(1.5);}
 }
 
+#entering{
+  background-color: brown;
+  border: none;
+  color: $primarycolor;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50%;
+}
 
-
-  
-  .child1 {
-    background-image: url('./images/1.jpg');
-    scroll-snap-align: start;
-  } 
-  .child2 {
-    background-image: url("./images/2.jpg");
-  scroll-snap-align: start;
-} 
 .pagelayout1 {
     width: auto;
     height: auto;
@@ -173,16 +179,7 @@ a:link {
     text-align: right;
     margin-right: 50px;
 }
-.fab fa-facebook-f {
-    color: $primarycolor;
-    width: 100px;
-    height: 100px;
-}
-.fab fa-twitter {
-    color: $primarycolor;
-    width: 100px;
-    height: 100px;
-}
+
 
 
 .text-block-left {
@@ -270,7 +267,8 @@ a:link {
     justify-content: space-around;
     
   }
-  .image9 {
+
+.image9 {
     left: 50%;
     margin-left: -75vw;
     margin-right: -50vw;
@@ -281,7 +279,7 @@ a:link {
       /* margin: 30px 30px 30px 0; */
       /* float: left; */
     }
-  .container9text {
+.container9text {
       /* width: auto;
       height: auto; */
       margin-right: -20%;
@@ -289,6 +287,16 @@ a:link {
       text-align: right;
   }
 
+.fab fa-facebook-f {
+    color: $primarycolor;
+    width: 100px;
+    height: 100px;
+}
+.fab fa-twitter {
+    color: $primarycolor;
+    width: 100px;
+    height: 100px;
+}
   // Tried changing text next to icons to custom font but this didn't work
   // .icons {
   //   font-family: Klavika;
