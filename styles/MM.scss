@@ -10,8 +10,7 @@ $tertiarycolor: rgb(105, 176, 185);
 
 @font-face {
     font-family: Klavika;
-    src: url(/fonts/klavika-light-webfont.woff) format('woff')
-
+    src: url(/fonts/klavika-light-webfont.woff) format('woff');
 }
 
 body {
@@ -39,16 +38,14 @@ h6 {
   font-style: italic;
 }
 
-// .text-block-left:after {
-//     content: ""; /* This is necessary for the pseudo element to work. */ 
-//     display: block; /* This will put the pseudo element on its own line. */
-//     margin: 0 auto; /* This will center the border. */
-//     width: 100%; /* Change this to whatever width you want. */
-//     padding-top: 20px; /* This creates some space between the element and the border. */
-//     border-bottom: 1px solid $primarycolor; /* This creates the border. Replace black with whatever color you want. */
-// }
-
-
+.imgbackground {
+  // height: 1027px;
+  background-size: cover;
+  background-position: center;
+    // max-width: 100%;
+    // height: auto;
+    // max-height: 100%;
+}
 .leftp {
     width: 200px;
 }
@@ -68,7 +65,7 @@ a:link {
     text-decoration: underline;
   }
 
-  .logo {
+.logo {
     height: 100px;
     width: 100px;
     filter: invert(1);
@@ -80,27 +77,31 @@ a:link {
     position: absolute;
     bottom: 3vw;
     right: 3vw;
-    /* color: white; */
     display: flex;
     align-items: flex-end;
     background-color: rgba(0, 0, 0, 0)
 }
-.arrow {
-  border: solid $primarycolor;
-  border-width: 0 1px 1px 0;
-  display: inline-block;
-  padding: 10px;
-  margin-left: 20px;
-}
+// Tried to install arrows for navigation but the text on the page started rotating as well so I had to disable it
+// Plan B: I installed a navigation arrow in the pagination element
 
-.right {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-}
-.left {
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
-}
+// .arrow {
+//   border: solid $primarycolor;
+//   border-width: 0 1px 1px 0;
+//   display: inline-block;
+//   padding: 10px;
+//   margin-left: 20px;
+// }
+
+// .right {
+//   transform: rotate(-45deg);
+//   -webkit-transform: rotate(-45deg);
+// }
+// .left {
+//   transform: rotate(135deg);
+//   -webkit-transform: rotate(135deg);
+// }
+
+// Page: enter
 .intro {
   display: flex;
   align-items: center;
@@ -146,22 +147,8 @@ a:link {
   100% { transform: translateY(0px) scale(1.5);}
 }
 
-.columnpage {
-  color: $primarycolor
-}
-  
-// @keyframes bounce-m {
-//     0% {transform: scale(1); translateY(0);}
-//     50% {transform: scale(1.5) translateY(-200px);}
-//     100% {transform: scale(1.5) translateY(15px);}
-//    }
-//    .container {
-//        width: 100%;
-//        height: auto;
-//     // scroll-snap-type: mandatory;
-//     // scroll-snap-points-y: repeat(300px);
-//     // scroll-snap-type: y mandatory;
-//   }
+
+
   
   .child1 {
     background-image: url('./images/1.jpg');
@@ -179,7 +166,6 @@ a:link {
     align-items: left;
 }
 .pagelayout2 {
-
     width: auto;
     height: auto;
     display: flex;
@@ -191,7 +177,6 @@ a:link {
     color: $primarycolor;
     width: 100px;
     height: 100px;
-
 }
 .fab fa-twitter {
     color: $primarycolor;
@@ -220,7 +205,7 @@ a:link {
     text-decoration-line: solid;
     display: flex;
     justify-content: left;
-    background-color: rgba(0, 0, 0, 0)
+    background-color: rgba(0, 0, 0, 0);
 }
 .text-block2 {
     width: 35vw;
@@ -233,7 +218,7 @@ a:link {
     background-color: rgba(0, 0, 0, 0)
 }
 
-
+// Navigation
 .pagination {
     width: 5vw;
     position: absolute;
@@ -244,15 +229,12 @@ a:link {
     display: flex;
     justify-content: left;
     background-color: rgba(0, 0, 0, 0);
-    
-//     scroll-snap-type: x mandatory;
-//   overflow-x: scroll;
 }
   
   .pagination a {
     color:$primarycolor;
     float: left;
-    padding: 1px 2px;
+    padding: 1px 3px;
     text-decoration: none;
     transition: background-color .3s;
     border: 1px dotted $primarycolor;
@@ -264,7 +246,7 @@ a:link {
     border: 1px dotted $primarycolor;
   }
   
-  .pagination a:hover:not(.active) {background-color: #ddd;}
+  .pagination a:hover:not(.active) {background-color: $tertiarycolor}
   .text-pagination {
     width: 35vw;
     position: absolute;
@@ -276,14 +258,42 @@ a:link {
     justify-content: left;
     background-color: rgba(0, 0, 0, 0);
   }
-.imgbackground {
-  // height: 1027px;
-  background-size: cover;
-  background-position: center;
-    // max-width: 100%;
-    // height: auto;
-    // max-height: 100%;
-}
+  // page 9 was a challenge, tried to cut a piece of the image but that didn't work, it zoomed in too much.
+  // then I tried pushing the image out and that went well, although the layout of the text is not perfect
+  .container9 {
+    /* padding: 20px 40px 40px; */
+    height: auto;
+    width: auto;
+    /* max-height: 1000px;
+    max-width: 1000px; */
+    display: flex;
+    justify-content: space-around;
+    
+  }
+  .image9 {
+    left: 50%;
+    margin-left: -75vw;
+    margin-right: -50vw;
+    max-width: 100vw;
+    position: relative;
+    right: 50%;
+    width: 100vw;
+      /* margin: 30px 30px 30px 0; */
+      /* float: left; */
+    }
+  .container9text {
+      /* width: auto;
+      height: auto; */
+      margin-right: -20%;
+      padding: 50px 20px 0px;
+      text-align: right;
+  }
+
+  // Tried changing text next to icons to custom font but this didn't work
+  // .icons {
+  //   font-family: Klavika;
+  //   src: url(/fonts/klavika-light-webfont.woff) format('woff');
+  // }
 
 
 
