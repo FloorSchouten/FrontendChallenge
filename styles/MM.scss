@@ -47,25 +47,6 @@ h6 {
   background-position: center;
 }
 
-.leftp {
-    width: 200px;
-}
-a:link {
-    color: $primarycolor;
-    background-color: transparent;
-    text-decoration: none;
-  }
-  a:visited {
-    color: $secondarycolor;
-    background-color: transparent;
-    text-decoration: none;
-  }
-  a:hover {
-    color: $tertiarycolor;
-    background-color: transparent;
-    text-decoration: underline;
-  }
-
 .logo {
     height: 100px;
     width: 100px;
@@ -158,22 +139,6 @@ a:link {
   border-radius: 50%;
 }
 
-.pagelayout1 {
-    width: auto;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-}
-.pagelayout2 {
-    width: auto;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-    margin-right: 50px;
-}
-
 .text-block-left {
     width: 25vw;
     position: absolute;
@@ -251,14 +216,10 @@ a:link {
   // page 9 was a challenge, tried to cut a piece of the image but that didn't work, it zoomed in too much.
   // then I tried pushing the image out and that went well, although the layout of the text is not perfect
   .container9 {
-    /* padding: 20px 40px 40px; */
     height: auto;
     width: auto;
-    /* max-height: 1000px;
-    max-width: 1000px; */
     display: flex;
     justify-content: space-around;
-    
   }
 
 .image9 {
@@ -269,12 +230,8 @@ a:link {
     position: relative;
     right: 50%;
     width: 100vw;
-      /* margin: 30px 30px 30px 0; */
-      /* float: left; */
     }
 .container9text {
-      /* width: auto;
-      height: auto; */
       margin-right: -20%;
       padding: 50px 20px 0px;
       text-align: right;
